@@ -1,42 +1,42 @@
 @font-face {
   font-family: "Lato";
   font-weight: 300;
-  src: url(/fonts/Lato-Light.ttf);
+  src: url(../fonts/Lato-Light.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 400;
-  src: url(/fonts/Lato-Regular.ttf);
+  src: url(../fonts/Lato-Regular.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 700;
-  src: url(/fonts/Lato-Bold.ttf);
+  src: url(../fonts/Lato-Bold.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 300;
-  src: url(/fonts/Raleway-Light.ttf);
+  src: url(../fonts/Raleway-Light.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 400;
-  src: url(/fonts/Raleway-Regular.ttf);
+  src: url(../fonts/Raleway-Regular.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 700;
-  src: url(/fonts/Raleway-Bold.ttf);
+  src: url(../fonts/Raleway-Bold.ttf);
   font-display: swap;
 }
 @keyframes itemFadeOut {
@@ -192,17 +192,12 @@ section {
   position: relative;
   justify-content: center;
 }
-/*center*/
-.navigation__links {
-  transform: translateX(22px);
-}
 .navigation__logo-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*center*/
 .navigation__logo-mobile {
   display: none;
 }

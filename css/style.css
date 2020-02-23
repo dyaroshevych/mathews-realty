@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(/img/header-bg.jpg) center / cover no-repeat;
+  background: url(../img/header-bg.jpg) center / cover no-repeat;
 }
 .header__text-container {
   transform: translateY(4rem);
@@ -19,7 +19,6 @@
 }
 .header__text-container .heading-primary {
   max-width: 70rem;
-  /* margin-bottom: 2rem; */
 }
 .header__features-list {
   display: flex;

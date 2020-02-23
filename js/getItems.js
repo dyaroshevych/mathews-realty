@@ -23,7 +23,7 @@ const getItems = (startIdx, endIdx, data, linkIdentifier) => {
     itemImage.classList.add("listings__item-img");
     itemImage.setAttribute(
       "src",
-      `/img/${linkIdentifier}/${linkIdentifier}-${data[i].id}.jpg`
+      `../img/${linkIdentifier}/${linkIdentifier}-${data[i].id}.jpg`
     );
     itemImage.setAttribute("alt", `${data[i].name}`);
     itemHeadingContainer.appendChild(itemImage);
@@ -54,7 +54,7 @@ const getItems = (startIdx, endIdx, data, linkIdentifier) => {
 
     const bedInfoImage = document.createElement("img");
     bedInfoImage.classList.add("listings__item-features-item-img");
-    bedInfoImage.setAttribute("src", "/img/bedroom.svg");
+    bedInfoImage.setAttribute("src", "../img/bedroom.svg");
     bedInfo.appendChild(bedInfoImage);
 
     const bedInfoCount = document.createElement("span");
@@ -69,7 +69,7 @@ const getItems = (startIdx, endIdx, data, linkIdentifier) => {
 
     const bathInfoImage = document.createElement("img");
     bathInfoImage.classList.add("listings__item-features-item-img");
-    bathInfoImage.setAttribute("src", "/img/bathroom.svg");
+    bathInfoImage.setAttribute("src", "../img/bathroom.svg");
     bathInfo.appendChild(bathInfoImage);
 
     const bathInfoCount = document.createElement("span");
