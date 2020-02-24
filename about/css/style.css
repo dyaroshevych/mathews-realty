@@ -1,5 +1,5 @@
 main {
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 .about__image-container {
   text-align: left;
@@ -39,6 +39,11 @@ main {
   }
   .about__contact-info-icon {
     margin-right: 0.5rem;
+  }
+}
+@media (max-width: 54em) {
+  main {
+    margin-top: 6rem;
   }
 }
 @media (max-width: 47.5em) {

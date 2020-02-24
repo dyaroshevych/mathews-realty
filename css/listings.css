@@ -1,6 +1,3 @@
-.listings-section {
-  background-color: rgb(247, 247, 247);
-}
 .listings__list {
   display: flex;
   flex-wrap: wrap;

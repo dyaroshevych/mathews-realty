@@ -44,6 +44,9 @@
 .contact__input:not(:valid) {
   border-color: #cc3234;
 }
+.contact__input:placeholder-shown {
+  border-color: #e3e3e3;
+}
 .contact__input:valid {
   border-color: rgb(98, 161, 98);
 }
