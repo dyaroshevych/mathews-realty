@@ -52,10 +52,6 @@
 .about__text-container .btn {
   margin-top: 3rem;
 }
-.about-section,
-.listings-section:nth-of-type(4) {
-  background-color: rgb(247, 247, 247);
-}
 @media (max-width: 75em) {
   .divider__container {
     flex-wrap: wrap;

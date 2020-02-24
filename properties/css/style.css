@@ -1,9 +1,6 @@
 main {
   margin-top: 7rem;
 }
-.listings-section:nth-of-type(2) {
-  background-color: rgb(247, 247, 247);
-}
 @media (max-width: 54em) {
   main {
     margin-top: 6rem;
