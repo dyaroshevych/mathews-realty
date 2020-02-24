@@ -78,7 +78,7 @@ button {
 section {
   padding: 5rem 0;
 }
-section:nth-of-type(even) {
+section:nth-of-type(odd) {
   background-color: rgb(247, 247, 247);
 }
 .section__heading {

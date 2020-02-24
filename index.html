@@ -72,7 +72,7 @@
       <div class="header__text-container wrapper">
         <div class="header__text-box">
           <h1 class="heading-primary">
-            The highest producing agent in Westlake
+            Luxury Westlake Estates
           </h1>
           <ul class="header__features-list">
             <li class="header__features-item">
@@ -89,35 +89,41 @@
       </div>
     </header>
     <main>
-      <section class="divider-section">
-        <div class="wrapper divider__container">
-          <div class="divider__image-container">
-            <img
-              class="divider__image"
-              src="./img/partners/partner-1.png"
-              alt="Southlake Style"
-            />
+      <section class="featured-section">
+        <div class="wrapper featured__container">
+          <div class="featured__arrows-container">
+            <div class="featured__arrow featured__arrow--left">
+              <img class="featured__arrow-image" src="./img/arrow.svg" alt="" />
+            </div>
+            <div class="featured__arrow featured__arrow--right">
+              <img class="featured__arrow-image" src="./img/arrow.svg" alt="" />
+            </div>
           </div>
-          <div class="divider__image-container">
-            <img
-              class="divider__image"
-              src="./img/partners/partner-2.png"
-              alt="D-Magazine"
-            />
-          </div>
-          <div class="divider__image-container">
-            <img
-              class="divider__image"
-              src="./img/partners/partner-3.png"
-              alt="The Dallas Morning News"
-            />
-          </div>
-          <div class="divider__image-container">
-            <img
-              class="divider__image"
-              src="./img/partners/partner-4.png"
-              alt="Simply Westlake"
-            />
+          <div class="featured__slider">
+            <div class="featured__slide active">
+              <img
+                class="featured__image"
+                src="./img/partners/partner-1.png"
+                alt="Southlake Style"
+              />
+              <img
+                class="featured__image"
+                src="./img/partners/partner-2.png"
+                alt="D-Magazine"
+              />
+            </div>
+            <div class="featured__slide">
+              <img
+                class="featured__image"
+                src="./img/partners/partner-3.png"
+                alt="The Dallas Morning News"
+              />
+              <img
+                class="featured__image"
+                src="./img/partners/partner-4.png"
+                alt="Simply Westlake"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -276,6 +282,7 @@
         </div>
       </section>
     </main>
+    <script src="./js/slider.js" defer></script>
     <script>
       const adjustToWindowSize = () => {
         if (window.innerWidth <= 864) {

@@ -8,6 +8,7 @@
   padding: 3rem;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.1);
   height: fit-content;
+  background-color: #fff;
 }
 .contact__form .heading-tertiary,
 .contact__info .heading-tertiary {
