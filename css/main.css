@@ -198,9 +198,6 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.navigation__logo-mobile {
-  display: none;
-}
 .navigation__logo-img {
   height: 4rem;
 }
@@ -354,7 +351,7 @@ section {
 }
 @media (max-width: 54em) {
   .navigation {
-    padding: 1rem 0;
+    padding: 3rem 0;
   }
   .navigation__logo-container {
     position: static;
@@ -365,14 +362,11 @@ section {
   .navigation__item {
     display: none;
   }
-  .navigation__badge {
-    display: none;
-  }
-  .navigation__logo-mobile {
-    display: block;
-  }
-  .navigation__logo-mobile img {
-    height: 4rem;
+  .navigation__logo-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
   }
   .mobile-navigation {
     display: flex;
