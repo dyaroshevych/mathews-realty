@@ -33,7 +33,9 @@
             <a href="./about" class="mobile-navigation__link">About</a>
           </li>
           <li class="mobile-navigation__item">
-            <a href="./properties" class="mobile-navigation__link">Properties</a>
+            <a href="./properties" class="mobile-navigation__link"
+              >Properties</a
+            >
           </li>
           <li class="mobile-navigation__item">
             <a href="./contact" class="mobile-navigation__link">Contact</a>
@@ -43,7 +45,7 @@
     </div>
     <nav class="navigation">
       <div class="navigation__list wrapper">
-        <a href=".//" class="navigation__logo-container">
+        <a href="./" class="navigation__logo-container">
           <img
             class="navigation__logo-img"
             src="./img/logo.png"
@@ -52,16 +54,16 @@
         </a>
         <ul class="navigation__links">
           <li class="navigation__item">
-            <a href=".//" class="navigation__link active">Home</a>
+            <a href="./" class="navigation__link active">Home</a>
           </li>
           <li class="navigation__item">
-            <a href=".//about" class="navigation__link">About</a>
+            <a href="./about" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
-            <a href=".//properties" class="navigation__link">Properties</a>
+            <a href="./properties" class="navigation__link">Properties</a>
           </li>
           <li class="navigation__item">
-            <a href=".//contact" class="navigation__link">Contact</a>
+            <a href="./contact" class="navigation__link">Contact</a>
           </li>
         </ul>
       </div>
@@ -96,7 +98,7 @@
           <div class="listings__container" id="sales-list"></div>
           <div class="expand-button-container">
             <a
-              href=".//properties"
+              href="./properties"
               class="expand-button btn btn--black btn--medium"
               >All Items</a
             >
@@ -115,7 +117,7 @@
                 Real Estate Professional and Luxury Home Marketing Specialist
               </h3>
               <p class="paragraph" id="about-paragraph"></p>
-              <a href=".//about" class="btn btn--red btn--medium">Read More</a>
+              <a href="./about" class="btn btn--red btn--medium">Read More</a>
             </div>
             <div class="about__image-container">
               <img
@@ -136,7 +138,7 @@
           <div class="listings__container" id="sold-list"></div>
           <div class="expand-button-container">
             <a
-              href=".//properties"
+              href="./properties"
               class="expand-button btn btn--black btn--medium"
               >All Items</a
             >
@@ -243,7 +245,7 @@
       </section>
     </main>
     <script>
-      const cutAboutParagraph = () => {
+      const adjustToWindowSize = () => {
         if (window.innerWidth <= 864) {
           document.querySelector(
             "#about-paragraph"
@@ -267,8 +269,10 @@
           renderCount = 3;
         }
       };
-      cutAboutParagraph();
-      window.onresize = cutAboutParagraph;
+      adjustToWindowSize();
+      window.onresize = adjustToWindowSize;
+
+      let refIdentifier = "./";
     </script>
     <script src="./js/loadProperties.js" defer></script>
   </body>
