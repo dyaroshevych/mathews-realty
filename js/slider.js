@@ -19,5 +19,15 @@ const moveSlide = () => {
 
 moveSlide();
 
-leftArrow.addEventListener("click", () => moveSlide());
-rightArrow.addEventListener("click", () => moveSlide());
+let sliderTimer = window.setInterval(moveSlide, 3000);
+
+leftArrow.addEventListener("click", () => {
+  moveSlide();
+  window.clearInterval(sliderTimer);
+  sliderTimer = window.setInterval(moveSlide, 3000);
+});
+rightArrow.addEventListener("click", () => {
+  moveSlide();
+  window.clearInterval(sliderTimer);
+  sliderTimer = window.setInterval(moveSlide, 3000);
+});
