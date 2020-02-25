@@ -353,7 +353,7 @@ const getItems = (startIdx, endIdx, data, linkIdentifier, refIdentifier) => {
 
   for (let i = startIdx; i < endIdx; i++) {
     const item = document.createElement("div");
-    item.classList.add("listings__item");
+    item.classList.add("listings__item", "wow", "fadeInUp");
 
     const itemHeadingContainer = document.createElement("div");
     itemHeadingContainer.classList.add("listings__item-heading-container");

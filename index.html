@@ -50,27 +50,39 @@
             class="navigation__logo-img"
             src="./img/logo.png"
             alt="Susan Mathews"
+            data-wow-delay="150ms"
           />
         </a>
         <ul class="navigation__links">
           <li class="navigation__item">
-            <a href="./" class="navigation__link active">Home</a>
+            <a href="./" class="navigation__link active" data-wow-delay="50ms"
+              >Home</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="./about" class="navigation__link">About</a>
+            <a href="./about" class="navigation__link" data-wow-delay="100ms"
+              >About</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="./properties" class="navigation__link">Properties</a>
+            <a
+              href="./properties"
+              class="navigation__link"
+              data-wow-delay="200ms"
+              >Properties</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="./contact" class="navigation__link">Contact</a>
+            <a href="./contact" class="navigation__link" data-wow-delay="250ms"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
     </nav>
-    <header class="header" id="header">
+    <header class="header  wow fadeIn" id="header">
       <div class="header__text-container wrapper">
-        <div class="header__text-box">
+        <div class="header__text-box wow fadeInUp">
           <h1 class="heading-primary">
             Luxury Westlake Estates
           </h1>
@@ -129,23 +141,25 @@
       </section>
       <section class="about-section" id="about">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">About Me</span>
             <h2 class="heading-secondary">Susan Mathews</h2>
           </div>
           <div class="about__container">
             <div class="about__text-container">
-              <h3 class="heading-tertiary">
+              <h3 class="heading-tertiary wow fadeInUp">
                 Real Estate Professional and Luxury Home Marketing Specialist
               </h3>
-              <p class="paragraph" id="about-paragraph"></p>
-              <a href="./about" class="btn btn--red btn--medium">Read More</a>
+              <p class="paragraph wow fadeInUp" id="about-paragraph"></p>
+              <a href="./about" class="btn btn--red btn--medium wow fadeInUp"
+                >Read More</a
+              >
             </div>
             <div class="about__image-container">
               <img
                 src="./img/about.jpg"
                 alt="Susan Mathews"
-                class="about__image"
+                class="about__image wow fadeInUp"
               />
             </div>
           </div>
@@ -153,7 +167,7 @@
       </section>
       <section class="listings-section">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">Featured Listings</span>
             <h2 class="heading-secondary">Find Your Perfect Home</h2>
           </div>
@@ -161,7 +175,7 @@
           <div class="expand-button-container">
             <a
               href="./properties"
-              class="expand-button btn btn--black btn--medium"
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
               >All Items</a
             >
           </div>
@@ -169,7 +183,7 @@
       </section>
       <section class="listings-section">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">Experience</span>
             <h2 class="heading-secondary">Sold Listings</h2>
           </div>
@@ -177,19 +191,19 @@
           <div class="expand-button-container">
             <a
               href="./properties"
-              class="expand-button btn btn--black btn--medium"
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
               >All Items</a
             >
           </div>
         </div>
       </section>
-      <section class="blog-section">
+      <section class="contact-section">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">Contact Me</span>
             <h2 class="heading-secondary">Get In Touch</h2>
           </div>
-          <div class="contact__container">
+          <div class="contact__container wow fadeInUp">
             <form action="" method="POST" class="contact__form">
               <h3 class="heading-tertiary">Send Me A Message</h3>
               <input
@@ -230,7 +244,7 @@
                 Send
               </button>
             </form>
-            <div class="contact__info">
+            <div class="contact__info wow fadeInUp">
               <h3 class="heading-tertiary">Contact Info</h3>
               <p class="paragraph">Susan Mathews</p>
               <a href="tel:(817) 653-0200" class="contact__info-item">
@@ -314,5 +328,9 @@
       let refIdentifier = "./";
     </script>
     <script src="./js/loadProperties.js" defer></script>
+    <script src="./js/wow.min.js"></script>
+    <script defer>
+      new WOW().init();
+    </script>
   </body>
 </html>

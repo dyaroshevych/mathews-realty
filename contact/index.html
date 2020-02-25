@@ -30,10 +30,14 @@
             <a href="../about" class="mobile-navigation__link">About</a>
           </li>
           <li class="mobile-navigation__item">
-            <a href="../properties" class="mobile-navigation__link">Properties</a>
+            <a href="../properties" class="mobile-navigation__link"
+              >Properties</a
+            >
           </li>
           <li class="mobile-navigation__item">
-            <a href="../contact" class="mobile-navigation__link active">Contact</a>
+            <a href="../contact" class="mobile-navigation__link active"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -66,11 +70,11 @@
     <main>
       <section class="blog-section">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">Contact Me</span>
             <h2 class="heading-secondary">Get In Touch</h2>
           </div>
-          <div class="contact__container">
+          <div class="contact__container wow fadeInUp">
             <form action="" method="POST" class="contact__form">
               <h3 class="heading-tertiary">Send Me A Message</h3>
               <input
@@ -111,7 +115,7 @@
                 Send
               </button>
             </form>
-            <div class="contact__info">
+            <div class="contact__info wow fadeInUp">
               <h3 class="heading-tertiary">Contact Info</h3>
               <p class="paragraph">Susan Mathews</p>
               <a href="tel:(817) 653-0200" class="contact__info-item">
@@ -166,5 +170,9 @@
         </div>
       </section>
     </main>
+    <script src="../js/wow.min.js"></script>
+    <script defer>
+      new WOW().init();
+    </script>
   </body>
 </html>

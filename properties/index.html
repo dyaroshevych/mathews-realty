@@ -70,14 +70,14 @@
     <main>
       <section class="listings-section" id="sales-section">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">Featured Listings</span>
             <h2 class="heading-secondary">Find Your Perfect Home</h2>
           </div>
           <div class="listings__container" id="sales-list"></div>
           <div class="expand-button-container">
             <a
-              class="expand-button btn btn--black btn--medium"
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
               id="sales-listings-button"
               >Load More</a
             >
@@ -86,14 +86,14 @@
       </section>
       <section class="listings-section" id="sold-section">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">Experience</span>
             <h2 class="heading-secondary">Sold Listings</h2>
           </div>
           <div class="listings__container" id="sold-list"></div>
           <div class="expand-button-container">
             <a
-              class="expand-button btn btn--black btn--medium"
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
               id="sold-listings-button"
               >Load More</a
             >
@@ -155,5 +155,9 @@
       window.onresize = adjustToWindowSize;
     </script>
     <script src="../js/loadProperties.js" defer></script>
+    <script src="../js/wow.min.js"></script>
+    <script defer>
+      new WOW().init();
+    </script>
   </body>
 </html>

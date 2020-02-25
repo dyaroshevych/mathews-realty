@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: itemFadeOut 1s linear;
   width: calc(33.3333% - 3rem);
   background-color: #fff;
   border-radius: 3px;

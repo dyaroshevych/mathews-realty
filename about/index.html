@@ -30,7 +30,9 @@
             <a href="../about" class="mobile-navigation__link active">About</a>
           </li>
           <li class="mobile-navigation__item">
-            <a href="../properties" class="mobile-navigation__link">Properties</a>
+            <a href="../properties" class="mobile-navigation__link"
+              >Properties</a
+            >
           </li>
           <li class="mobile-navigation__item">
             <a href="../contact" class="mobile-navigation__link">Contact</a>
@@ -66,15 +68,22 @@
     <main>
       <section class="about-section" id="about">
         <div class="wrapper">
-          <div class="section__heading">
+          <div class="section__heading wow fadeInUp">
             <span class="heading-secondary-subheading">About Me</span>
             <h2 class="heading-secondary">Susan Mathews</h2>
           </div>
           <div class="about__container">
             <div class="about__image-container">
-              <img src="../img/about.jpg" alt="" class="about__image" />
+              <img
+                src="../img/about.jpg"
+                alt=""
+                class="about__image wow fadeInUp"
+              />
               <div class="about__contact-info-container">
-                <a href="tel:(817) 653-0200" class="about__contact-info-item">
+                <a
+                  href="tel:(817) 653-0200"
+                  class="about__contact-info-item wow fadeInUp"
+                >
                   <img
                     class="about__contact-info-icon"
                     src="../img/phone.svg"
@@ -84,7 +93,7 @@
                 </a>
                 <a
                   href="mailto:susan.mathews@alliebeth.com"
-                  class="about__contact-info-item"
+                  class="about__contact-info-item wow fadeInUp"
                 >
                   <img
                     class="about__contact-info-icon"
@@ -95,16 +104,18 @@
                     susan.mathews@alliebeth.com
                   </h4>
                 </a>
-                <a href="./contact" class="btn btn--black btn--medium"
+                <a
+                  href="./contact"
+                  class="btn btn--black btn--medium wow fadeInUp"
                   >Contact Me</a
                 >
               </div>
             </div>
             <div class="about__text-container">
-              <h3 class="heading-tertiary">
+              <h3 class="heading-tertiary wow fadeInUp">
                 Achievements
               </h3>
-              <p class="paragraph">
+              <p class="paragraph wow fadeInUp" wow-data-delay="50ms">
                 Susan Mathews is one of the most accomplished and respected real
                 estate agents in the DFW area. Susan has been recognized in 2018
                 and 2019 by D Magazine as one of the Top Producers and was the
@@ -114,10 +125,10 @@
                 and more. Susan is an Executive Vice President at Allie Beth
                 Allman & Associates.
               </p>
-              <h3 class="heading-tertiary">
+              <h3 class="heading-tertiary wow fadeInUp">
                 Experience
               </h3>
-              <p class="paragraph">
+              <p class="paragraph wow fadeInUp" wow-data-delay="50ms">
                 Having moved nine times, including four corporate relocations to
                 five different states - New York, Connecticut, Indiana, Florida
                 and Texas - Susan understands how to assist buyers in all their
@@ -130,10 +141,10 @@
                 determination to find a wonderful home for them and their
                 families.
               </p>
-              <h3 class="heading-tertiary">
+              <h3 class="heading-tertiary wow fadeInUp">
                 Current Life
               </h3>
-              <p class="paragraph">
+              <p class="paragraph wow fadeInUp" wow-data-delay="50ms">
                 Susan currently resides in Westlake. She is a golf member at the
                 prestigious Vaquero Club and currently serves on the House
                 Committee. Susan is married to her husband Jimmy and has three
@@ -162,5 +173,9 @@
         </div>
       </section>
     </main>
+    <script src="../js/wow.min.js"></script>
+    <script defer>
+      new WOW().init();
+    </script>
   </body>
 </html>
