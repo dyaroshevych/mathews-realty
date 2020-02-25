@@ -282,7 +282,7 @@ section:nth-of-type(even) {
   left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.12);
   animation: fadeInDown 0.5s 0.1s backwards;
 }
