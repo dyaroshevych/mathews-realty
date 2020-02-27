@@ -21,6 +21,9 @@ main {
 .about__contact-info-item {
   align-items: center;
 }
+.about__contact-info-item:first-of-type {
+  margin-right: 1rem;
+}
 .about__contact-info-item .heading-quarternary {
   color: #000;
 }
