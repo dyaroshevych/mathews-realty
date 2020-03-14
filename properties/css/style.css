@@ -1,0 +1,8 @@
+main {
+  margin-top: 7rem;
+}
+@media (max-width: 54em) {
+  main {
+    margin-top: 6rem;
+  }
+}

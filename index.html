@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mathew's realty | Home</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/listings.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="mobile-navigation" id="mobile-navigation">
+      <input
+        type="checkbox"
+        class="mobile-navigation__checkbox"
+        name="navigation-toggle"
+        id="navigation-toggle"
+      />
+      <label class="mobile-navigation__button" for="navigation-toggle"
+        ><span class="mobile-navigation__icon"></span
+      ></label>
+      <div class="mobile-navigation__background"></div>
+      <nav class="mobile-navigation__content">
+        <ul class="mobile-navigation__list">
+          <li class="mobile-navigation__item">
+            <a href="./" class="mobile-navigation__link active">Home</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="./about" class="mobile-navigation__link">About</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="./properties" class="mobile-navigation__link"
+              >Properties</a
+            >
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="./contact" class="mobile-navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="navigation">
+      <div class="navigation__list wrapper">
+        <a href="./" class="navigation__logo-container">
+          <img
+            class="navigation__logo-img"
+            src="./img/logo.svg"
+            alt="Susan Mathews"
+            data-wow-delay="150ms"
+          />
+        </a>
+        <ul class="navigation__links">
+          <li class="navigation__item">
+            <a href="./" class="navigation__link active" data-wow-delay="50ms"
+              >Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="./about" class="navigation__link" data-wow-delay="100ms"
+              >About</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="./properties"
+              class="navigation__link"
+              data-wow-delay="200ms"
+              >Properties</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="./contact" class="navigation__link" data-wow-delay="250ms"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header  wow fadeIn" id="header">
+      <div class="header__text-container wrapper">
+        <div class="header__text-box wow fadeInUp">
+          <h1 class="heading-primary">
+            Luxury Westlake Estates
+          </h1>
+          <ul class="header__features-list">
+            <li class="header__features-item">
+              Finest Westlake Estates
+            </li>
+            <li class="header__features-item">
+              Client Centric
+            </li>
+            <li class="header__features-item">
+              Integrous Service
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="featured-section">
+        <div class="wrapper featured__container">
+          <div class="featured__arrows-container">
+            <div class="featured__arrow featured__arrow--left">
+              <img class="featured__arrow-image" src="./img/arrow.svg" alt="" />
+            </div>
+            <div class="featured__arrow featured__arrow--right">
+              <img class="featured__arrow-image" src="./img/arrow.svg" alt="" />
+            </div>
+          </div>
+          <div class="featured__slider">
+            <div class="featured__slide active">
+              <img
+                class="featured__image"
+                src="./img/partners/partner-1.png"
+                alt="Southlake Style"
+              />
+              <img
+                class="featured__image"
+                src="./img/partners/partner-2.png"
+                alt="D-Magazine"
+              />
+            </div>
+            <div class="featured__slide">
+              <img
+                class="featured__image"
+                src="./img/partners/partner-3.png"
+                alt="The Dallas Morning News"
+              />
+              <img
+                class="featured__image"
+                src="./img/partners/partner-4.png"
+                alt="Simply Westlake"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <div class="wrapper">
+          <div class="section__heading wow fadeInUp">
+            <span class="heading-secondary-subheading">About Me</span>
+            <h2 class="heading-secondary">Susan Mathews</h2>
+          </div>
+          <div class="about__container">
+            <div class="about__text-container">
+              <h3 class="heading-tertiary wow fadeInUp">
+                Real Estate Professional and Luxury Home Marketing Specialist
+              </h3>
+              <p class="paragraph wow fadeInUp" id="about-paragraph"></p>
+              <a href="./about" class="btn btn--red btn--medium wow fadeInUp"
+                >Read More</a
+              >
+            </div>
+            <div class="about__image-container">
+              <img
+                src="./img/about.jpg"
+                alt="Susan Mathews"
+                class="about__image wow fadeInUp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="listings-section">
+        <div class="wrapper">
+          <div class="section__heading wow fadeInUp">
+            <span class="heading-secondary-subheading">Featured Listings</span>
+            <h2 class="heading-secondary">Find Your Perfect Home</h2>
+          </div>
+          <div class="listings__container" id="sales-list"></div>
+          <div class="expand-button-container">
+            <a
+              href="./properties"
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
+              >All Items</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="listings-section">
+        <div class="wrapper">
+          <div class="section__heading wow fadeInUp">
+            <span class="heading-secondary-subheading">Experience</span>
+            <h2 class="heading-secondary">Sold Listings</h2>
+          </div>
+          <div class="listings__container" id="sold-list"></div>
+          <div class="expand-button-container">
+            <a
+              href="./properties"
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
+              >All Items</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="wrapper">
+          <div class="section__heading wow fadeInUp">
+            <span class="heading-secondary-subheading">Contact Me</span>
+            <h2 class="heading-secondary">Get In Touch</h2>
+          </div>
+          <div class="contact__container wow fadeInUp">
+            <form action="" method="POST" class="contact__form">
+              <h3 class="heading-tertiary">Send Me A Message</h3>
+              <input
+                type="text"
+                class="contact__input"
+                name="name"
+                id="contact-name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="contact__input"
+                name="_replyto"
+                id="contact-email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="tel"
+                class="contact__input"
+                name="phone"
+                id="contact-phone"
+                placeholder="Your Number"
+                required
+              />
+              <textarea
+                class="contact__textarea"
+                name="comments"
+                id="contact-message"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn--red btn--medium contact__button"
+              >
+                Send
+              </button>
+            </form>
+            <div class="contact__info wow fadeInUp">
+              <h3 class="heading-tertiary">Contact Info</h3>
+              <p class="paragraph">Susan Mathews</p>
+              <a href="tel:(817) 653-0200" class="contact__info-item">
+                <img
+                  class="contact__info-item-icon"
+                  src="./img/phone.svg"
+                  alt="My Phone"
+                />
+                <p class="paragraph">(817)653-0200</p>
+              </a>
+              <a href="mailto:youremail@example.com" class="contact__info-item">
+                <img
+                  class="contact__info-item-icon"
+                  src="./img/mail.svg"
+                  alt="My Email"
+                />
+                <p class="paragraph">youremail@example.com</p>
+              </a>
+              <a
+                href="https://goo.gl/maps/B2DMjKfVbipFEKVy6"
+                class="contact__info-item"
+              >
+                <img
+                  class="contact__info-item-icon"
+                  src="./img/pin.svg"
+                  alt="My Email"
+                />
+                <p class="paragraph">
+                  550 Reserve Street, Suite 320. Southlake, Texas 76092 United
+                  States
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners-section">
+        <div class="wrapper partners__container">
+          <img
+            class="partners__img"
+            src="./img/partner-1.png"
+            alt="Dona Robinson"
+          />
+          <img
+            class="partners__img"
+            src="./img/partner-2.jpg"
+            alt="Allie Beth Allman and Associates"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="./js/slider.js" defer></script>
+    <script>
+      const adjustToWindowSize = () => {
+        if (window.innerWidth <= 864) {
+          document.querySelector(
+            "#about-paragraph"
+          ).innerHTML = `Susan Mathews is one of the most accomplished and respected real
+          estate agents in the DFW area. Susan has been recognized in 2018
+          and 2019 by D Magazine as one of the Top Producers and was the
+          highest producing agent in Westlake in 2019. With over 15 years
+          experience in the business...`;
+          renderCount = 2;
+        } else {
+          document.querySelector(
+            "#about-paragraph"
+          ).innerHTML = `Susan Mathews is one of the most accomplished and respected real
+          estate agents in the DFW area. Susan has been recognized in 2018
+          and 2019 by D Magazine as one of the Top Producers and was the
+          highest producing agent in Westlake in 2019. With over 15 years
+          experience in the business, Susan has had the pleasure to work
+          with top executives, professional athletes, leading attorneys
+          and more. Susan is an Executive Vice President at Allie Beth
+          Allman & Associates.`;
+          renderCount = 3;
+        }
+      };
+      adjustToWindowSize();
+      window.onresize = adjustToWindowSize;
+
+      let refIdentifier = "./";
+    </script>
+    <script src="./js/loadProperties.js" defer></script>
+    <script src="./js/wow.min.js"></script>
+    <script defer>
+      new WOW().init();
+    </script>
+  </body>
+</html>

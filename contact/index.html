@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mathew's realty | Contact Me</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="mobile-navigation" id="mobile-navigation">
+      <input
+        type="checkbox"
+        class="mobile-navigation__checkbox"
+        name="navigation-toggle"
+        id="navigation-toggle"
+      />
+      <label class="mobile-navigation__button" for="navigation-toggle"
+        ><span class="mobile-navigation__icon"></span
+      ></label>
+      <div class="mobile-navigation__background"></div>
+      <nav class="mobile-navigation__content">
+        <ul class="mobile-navigation__list">
+          <li class="mobile-navigation__item">
+            <a href="../" class="mobile-navigation__link">Home</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="../about" class="mobile-navigation__link">About</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="../properties" class="mobile-navigation__link"
+              >Properties</a
+            >
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="../contact" class="mobile-navigation__link active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="navigation">
+      <div class="navigation__list wrapper">
+        <a href="../" class="navigation__logo-container">
+          <img
+            class="navigation__logo-img"
+            src="../img/logo.svg"
+            alt="Susan Mathews"
+          />
+        </a>
+        <ul class="navigation__links">
+          <li class="navigation__item">
+            <a href="../" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="../about" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="../properties" class="navigation__link">Properties</a>
+          </li>
+          <li class="navigation__item">
+            <a href="../contact" class="navigation__link active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="blog-section">
+        <div class="wrapper">
+          <div class="section__heading wow fadeInUp">
+            <span class="heading-secondary-subheading">Contact Me</span>
+            <h2 class="heading-secondary">Get In Touch</h2>
+          </div>
+          <div class="contact__container wow fadeInUp">
+            <form action="" method="POST" class="contact__form">
+              <h3 class="heading-tertiary">Send Me A Message</h3>
+              <input
+                type="text"
+                class="contact__input"
+                name="name"
+                id="contact-name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="contact__input"
+                name="_replyto"
+                id="contact-email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="tel"
+                class="contact__input"
+                name="phone"
+                id="contact-phone"
+                placeholder="Your Number"
+                required
+              />
+              <textarea
+                class="contact__textarea"
+                name="comments"
+                id="contact-message"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn--red btn--medium contact__button"
+              >
+                Send
+              </button>
+            </form>
+            <div class="contact__info wow fadeInUp">
+              <h3 class="heading-tertiary">Contact Info</h3>
+              <p class="paragraph">Susan Mathews</p>
+              <a href="tel:(817) 653-0200" class="contact__info-item">
+                <img
+                  class="contact__info-item-icon"
+                  src="../img/phone.svg"
+                  alt="My Phone"
+                />
+                <p class="paragraph">(817)653-0200</p>
+              </a>
+              <a
+                href="mailto:susan.mathews@alliebeth.com"
+                class="contact__info-item"
+              >
+                <img
+                  class="contact__info-item-icon"
+                  src="../img/mail.svg"
+                  alt="My Email"
+                />
+                <p class="paragraph">susan.mathews@alliebeth.com</p>
+              </a>
+              <a
+                href=".https://goo.gl/maps/B2DMjKfVbipFEKVy6"
+                class="contact__info-item"
+              >
+                <img
+                  class="contact__info-item-icon"
+                  src="../img/pin.svg"
+                  alt="My Email"
+                />
+                <p class="paragraph">
+                  550 Reserve Street, Suite 320. Southlake, Texas 76092 United
+                  States
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners-section">
+        <div class="wrapper partners__container">
+          <img
+            class="partners__img"
+            src="../img/partner-1.png"
+            alt="Dona Robinson"
+          />
+          <img
+            class="partners__img"
+            src="../img/partner-2.jpg"
+            alt="Dona Robinson"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="../js/wow.min.js"></script>
+    <script defer>
+      new WOW().init();
+    </script>
+  </body>
+</html>

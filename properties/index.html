@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mathew's realty | Properties For Sale</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="mobile-navigation" id="mobile-navigation">
+      <input
+        type="checkbox"
+        class="mobile-navigation__checkbox"
+        name="navigation-toggle"
+        id="navigation-toggle"
+      />
+      <label class="mobile-navigation__button" for="navigation-toggle"
+        ><span class="mobile-navigation__icon"></span
+      ></label>
+      <div class="mobile-navigation__background"></div>
+      <nav class="mobile-navigation__content">
+        <ul class="mobile-navigation__list">
+          <li class="mobile-navigation__item">
+            <a href="../" class="mobile-navigation__link">Home</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="../about" class="mobile-navigation__link">About</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="../properties" class="mobile-navigation__link active"
+              >Properties</a
+            >
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="../contact" class="mobile-navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="navigation">
+      <div class="navigation__list wrapper">
+        <a href="../" class="navigation__logo-container">
+          <img
+            class="navigation__logo-img"
+            src="../img/logo.svg"
+            alt="Susan Mathews"
+          />
+        </a>
+        <ul class="navigation__links">
+          <li class="navigation__item">
+            <a href="../" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="../about" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="../properties" class="navigation__link active"
+              >Properties</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="../contact" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="listings-section" id="sales-section">
+        <div class="wrapper">
+          <div class="section__heading wow fadeInUp">
+            <span class="heading-secondary-subheading">Featured Listings</span>
+            <h2 class="heading-secondary">Find Your Perfect Home</h2>
+          </div>
+          <div class="listings__container" id="sales-list"></div>
+          <div class="expand-button-container">
+            <a
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
+              id="sales-listings-button"
+              >Load More</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="listings-section" id="sold-section">
+        <div class="wrapper">
+          <div class="section__heading wow fadeInUp">
+            <span class="heading-secondary-subheading">Experience</span>
+            <h2 class="heading-secondary">Sold Listings</h2>
+          </div>
+          <div class="listings__container" id="sold-list"></div>
+          <div class="expand-button-container">
+            <a
+              class="expand-button btn btn--black btn--medium wow fadeInUp"
+              id="sold-listings-button"
+              >Load More</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="partners-section">
+        <div class="wrapper partners__container">
+          <img
+            class="partners__img"
+            src="../img/partner-1.png"
+            alt="Dona Robinson"
+          />
+          <img
+            class="partners__img"
+            src="../img/partner-2.jpg"
+            alt="Dona Robinson"
+          />
+        </div>
+      </section>
+    </main>
+    <script>
+      const refIdentifier = "../";
+      let renderCount = 3;
+      document
+        .querySelector("#sales-listings-button")
+        .addEventListener("click", () => {
+          salesContainer.appendChild(
+            getItems(
+              renderedSales,
+              renderedSales + renderCount,
+              salesData,
+              "sales",
+              refIdentifier
+            )
+          );
+        });
+      document
+        .querySelector("#sold-listings-button")
+        .addEventListener("click", () => {
+          soldContainer.appendChild(
+            getItems(
+              renderedSold,
+              renderedSold + renderCount,
+              soldData,
+              "sold",
+              refIdentifier
+            )
+          );
+        });
+      const adjustToWindowSize = () => {
+        if (window.innerWidth <= 864) {
+          renderCount = 2;
+        } else {
+          renderCount = 3;
+        }
+      };
+      adjustToWindowSize();
+      window.onresize = adjustToWindowSize;
+    </script>
+    <script src="../js/loadProperties.js" defer></script>
+    <script src="../js/wow.min.js"></script>
+    <script defer>
+      new WOW().init();
+    </script>
+  </body>
+</html>

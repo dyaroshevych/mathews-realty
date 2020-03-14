@@ -1,0 +1,118 @@
+.listings__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4.5rem;
+}
+.listings__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(33.3333% - 3rem);
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.listings__item:not(:nth-of-type(3n)) {
+  margin-right: 4.5rem;
+}
+.listings__item:nth-of-type(n + 4) {
+  margin-top: 4.5rem;
+}
+.listings__item-img {
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.listings__item-heading-container .heading-tertiary {
+  padding-top: 1.2rem;
+}
+.listings__item-heading-container .heading-tertiary,
+.listings__item-heading-container .heading-tertiary-subheading {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.listings__item-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0 1.2rem 1.2rem;
+}
+.listings__item-features-list {
+  display: flex;
+}
+.listings__item-features-item:not(:last-of-type) {
+  margin-right: 1.5rem;
+}
+.listings__item-features-item-img {
+  height: 2.5rem;
+}
+.listings__item-features-item-text {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: rgb(112, 112, 112);
+}
+@media (max-width: 75em) {
+  .listings__list {
+    margin-top: 3rem;
+  }
+  .listings__item {
+    width: calc(33.3333% - 2rem);
+  }
+  .listings__item:not(:nth-of-type(3n)) {
+    margin-right: 3rem;
+  }
+  .listings__item:nth-of-type(n + 4) {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 54em) {
+  .listings__item {
+    width: calc(50% - 1.5rem);
+  }
+  .listings__item:not(:nth-of-type(3n)) {
+    margin-right: 0;
+  }
+  .listings__item:nth-of-type(n + 4) {
+    margin-top: 0;
+  }
+  .listings__item:not(:nth-of-type(2n)) {
+    margin-right: 3rem;
+  }
+  .listings__item:nth-of-type(n + 3) {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 39.75em) {
+  .listings__item {
+    width: calc(50% - 0.75rem);
+  }
+  .listings__item:not(:nth-of-type(2n)) {
+    margin-right: 1.5rem;
+  }
+  .listings__item:nth-of-type(n + 3) {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 35em) {
+  .listings__item {
+    width: 30rem;
+    margin: 0 auto;
+  }
+  .listings__item:not(:nth-of-type(3n)) {
+    margin-right: auto;
+  }
+  .listings__item:not(:nth-of-type(2n)) {
+    margin-right: auto;
+  }
+  .listings__item:nth-of-type(n + 3) {
+    margin-top: 0;
+  }
+  .listings__item:not(:first-of-type) {
+    margin-top: 2rem;
+  }
+  .listings__list {
+    margin-top: 2rem;
+  }
+}
