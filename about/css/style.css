@@ -20,6 +20,7 @@ main {
 }
 .about__contact-info-item {
   align-items: center;
+  margin-bottom: 1rem;
 }
 .about__contact-info-item:first-of-type {
   margin-right: 1rem;
@@ -37,7 +38,7 @@ main {
   }
 
   .about__contact-info-container .btn {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-right: 5rem;
   }
   .about__contact-info-icon {
@@ -52,6 +53,9 @@ main {
 @media (max-width: 47.5em) {
   .about__contact-info-container .btn {
     margin: 2rem auto 3rem;
+  }
+  .about__contact-info-item {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 25em) {

@@ -394,7 +394,7 @@ section:nth-of-type(even) {
   width: 0;
   height: 100vh;
   background-color: #cc3234;
-  transition: width 0.8s ease-out;
+  transition: width 0.5s ease;
   z-index: 4;
 }
 .mobile-navigation__checkbox:checked ~ .mobile-navigation__background {
@@ -425,8 +425,8 @@ section:nth-of-type(even) {
   font-weight: 700;
   font-size: 4rem;
   color: #fff;
-  transform: translateX(50rem);
-  transition: transform 0.9s ease-out;
+  transform: translate3d(100vw, 0, 0);
+  transition: transform 0.5s ease;
 }
 .mobile-navigation__link::after {
   position: absolute;
@@ -436,7 +436,7 @@ section:nth-of-type(even) {
   width: 0;
   height: 4px;
   background-color: #fff;
-  transition: width 0.25s ease;
+  transition: width 0.5s ease;
 }
 .mobile-navigation__link.active::after {
   width: 5rem;
@@ -444,7 +444,7 @@ section:nth-of-type(even) {
 .mobile-navigation__checkbox:checked
   ~ .mobile-navigation__content
   .mobile-navigation__link {
-  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
 }
 .mobile-navigation__item:not(:last-of-type) {
   margin-bottom: 2rem;

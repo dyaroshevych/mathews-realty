@@ -138,6 +138,7 @@
   .header__text-box {
     box-shadow: none;
     padding: 0;
+    background-color: transparent;
   }
   .featured__slide {
     width: calc(100% - 5rem);
@@ -151,9 +152,6 @@
   }
 }
 @media (max-width: 25em) {
-  .header__text-container .heading-primary {
-    font-size: 4rem;
-  }
   .header__text-container .paragraph {
     margin-bottom: 2rem;
   }
