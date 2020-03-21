@@ -317,7 +317,7 @@ section:nth-of-type(even) {
 }
 .navigation__link {
   position: relative;
-  color: #cc3234;
+  color: #000;
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -328,7 +328,7 @@ section:nth-of-type(even) {
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #cc3234;
+  background-color: #000;
   transition: width 0.25s ease;
 }
 .navigation__link:hover::after,
