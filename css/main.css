@@ -90,47 +90,6 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@font-face {
-  font-family: "Lato";
-  font-weight: 300;
-  src: url(../fonts/Lato-Light.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-weight: 400;
-  src: url(../fonts/Lato-Regular.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-weight: 700;
-  src: url(../fonts/Lato-Bold.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 300;
-  src: url(../fonts/Raleway-Light.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 400;
-  src: url(../fonts/Raleway-Regular.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 700;
-  src: url(../fonts/Raleway-Bold.ttf);
-  font-display: swap;
-}
 @keyframes itemFadeOut {
   0% {
     opacity: 0;
@@ -155,7 +114,7 @@ html {
 }
 body {
   box-sizing: border-box;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 ul,
 li {
@@ -186,16 +145,16 @@ section:nth-of-type(even) {
   margin: 0 auto;
 }
 .heading-primary {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 6rem;
   line-height: 1;
 }
 .heading-secondary {
   display: inline-block;
   position: relative;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 4rem;
-  color: #000;
+  color: #222;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -207,30 +166,30 @@ section:nth-of-type(even) {
   transform: translateX(-50%);
   height: 4px;
   width: 5rem;
-  background-color: #000;
+  background-color: #222;
 }
 .heading-secondary-subheading {
   display: block;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 .heading-tertiary {
   display: inline-block;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 2.3rem;
-  color: #000;
+  color: #222;
 }
 .heading-tertiary-subheading {
   margin-top: 0.5rem;
   display: block;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
 }
 .heading-quarternary {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -248,13 +207,13 @@ section:nth-of-type(even) {
 }
 .btn--black {
   background-color: transparent;
-  border-color: #000;
-  border: 2px solid #000;
-  color: #000;
+  border-color: #222;
+  border: 2px solid #222;
+  color: #222;
   transition: all 0.25s ease;
 }
 .btn--black:hover {
-  background-color: #000;
+  background-color: #222;
   color: #fff;
 }
 .btn--large {
@@ -317,9 +276,9 @@ section:nth-of-type(even) {
 }
 .navigation__link {
   position: relative;
-  color: #000;
+  color: #222;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 .navigation__link::after {
   position: absolute;
@@ -327,8 +286,8 @@ section:nth-of-type(even) {
   bottom: -5px;
   left: 0;
   width: 0;
-  height: 3px;
-  background-color: #000;
+  height: 2px;
+  background-color: #222;
   transition: width 0.25s ease;
 }
 .navigation__link:hover::after,
