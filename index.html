@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./css/blog.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="mobile-navigation" id="mobile-navigation">
@@ -100,8 +103,13 @@
           </ul>
         </div>
       </div>
+      <div class="header__scroll-button">
+        <div class="header__scroll-button-chevron"></div>
+        <div class="header__scroll-button-chevron"></div>
+        <div class="header__scroll-button-chevron"></div>
+      </div>
     </header>
-    <main>
+    <main id="main">
       <section class="featured-section">
         <div class="wrapper featured__container">
           <div class="featured__arrows-container">
@@ -297,6 +305,29 @@
         </div>
       </section>
     </main>
+    <script>
+      const scrollTo = (element, to, duration) => {
+        if (duration <= 0) return;
+        var difference = to - element.scrollTop;
+        var perTick = difference / duration;
+
+        setTimeout(() => {
+          element.scrollTop = element.scrollTop + perTick;
+          if (element.scrollTop === to) return;
+          scrollTo(element, to, duration - 1);
+        }, 10);
+      };
+
+      document
+        .querySelector(".header__scroll-button")
+        .addEventListener("click", () => {
+          scrollTo(
+            document.documentElement,
+            document.querySelector("#main").offsetTop - 89,
+            50
+          );
+        });
+    </script>
     <script src="./js/slider.js" defer></script>
     <script>
       const adjustToWindowSize = () => {
