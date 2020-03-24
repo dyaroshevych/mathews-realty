@@ -235,7 +235,7 @@ section:nth-of-type(even) {
   text-transform: uppercase;
 }
 .navigation {
-  padding: 3.5rem 0;
+  padding: 4rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -266,13 +266,13 @@ section:nth-of-type(even) {
   z-index: 5;
 }
 .navigation__logo-img {
-  height: 8rem;
+  height: 7.5rem;
 }
 .navigation__item:not(:last-of-type) {
-  margin-right: 4rem;
+  margin-right: 5rem;
 }
 .navigation__item:nth-of-type(2) {
-  margin-right: 42rem;
+  margin-right: 45rem;
 }
 .navigation__link {
   position: relative;
