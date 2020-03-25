@@ -166,7 +166,7 @@ section:nth-of-type(even) {
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
-  width: 5rem;
+  width: 10rem;
   background-color: #222;
 }
 .heading-secondary-subheading {
@@ -194,6 +194,7 @@ section:nth-of-type(even) {
 .paragraph {
   font-size: 1.7rem;
   line-height: 1.48;
+  color: #222;
 }
 .btn {
   display: inline-block;
