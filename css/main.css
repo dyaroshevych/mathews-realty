@@ -194,7 +194,6 @@ section:nth-of-type(even) {
 .paragraph {
   font-size: 1.7rem;
   line-height: 1.48;
-  color: #222;
 }
 .btn {
   display: inline-block;

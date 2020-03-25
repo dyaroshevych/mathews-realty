@@ -10,6 +10,9 @@
   margin-bottom: 3rem;
   color: #000;
 }
+.about__text-container .paragraph {
+  font-weight: 300;
+}
 .about__image {
   width: 100%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.08);
