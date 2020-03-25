@@ -16,13 +16,25 @@
   }
 }
 .header {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(../img/header-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.header__video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.header__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .header__text-container {
   transform: translateY(5rem);
