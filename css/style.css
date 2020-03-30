@@ -58,7 +58,8 @@
 }
 .header__features-item {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .header__features-item,
 .heading-primary {
@@ -165,6 +166,10 @@
 }
 .featured__slide.active {
   opacity: 1;
+}
+.about__text-container .heading-tertiary {
+  font-size: 30px;
+  font-family: 'Cormorant Garamond', sans-serif;
 }
 .about__text-container .btn {
   margin-top: 3rem;

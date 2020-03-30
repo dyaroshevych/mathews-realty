@@ -148,6 +148,7 @@ section:nth-of-type(even) {
   font-weight: 500;
   font-size: 6rem;
   line-height: 1;
+  text-transform: uppercase;
 }
 .heading-secondary {
   display: inline-block;
@@ -171,20 +172,20 @@ section:nth-of-type(even) {
 }
 .heading-secondary-subheading {
   display: block;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   text-transform: uppercase;
 }
 .heading-tertiary {
   display: inline-block;
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   color: #222;
 }
 .heading-tertiary-subheading {
   margin-top: 0.5rem;
   display: block;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.8rem;
 }
 .heading-quarternary {
@@ -193,7 +194,7 @@ section:nth-of-type(even) {
 }
 .paragraph {
   font-size: 1.7rem;
-  line-height: 1.48;
+  line-height: 1.6;
 }
 .btn {
   display: inline-block;
