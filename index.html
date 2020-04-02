@@ -346,7 +346,7 @@
     </script>
     <script src="./js/slider.js" defer></script>
     <script>
-      const adjustToWindowSize = () => {
+      const adjustTextToWindowSize = () => {
         if (window.innerWidth <= 864) {
           document.querySelector(
             "#about-paragraph"
@@ -370,8 +370,8 @@
           renderCount = 3;
         }
       };
-      adjustToWindowSize();
-      window.onresize = adjustToWindowSize;
+      adjustTextToWindowSize();
+      window.onresize = adjustTextToWindowSize;
 
       let refIdentifier = "./";
     </script>
